@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Yash-Agrawal-2309/Express/issues"
   },
-  "homepage": "https://github.com/Yash-Agrawal-2309/Express#readme"
+  "homepage": "https://github.com/Yash-Agrawal-2309/Express#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
 }
