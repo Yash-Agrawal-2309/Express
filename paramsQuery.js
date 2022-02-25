@@ -11,22 +11,7 @@ app.get('/api/products', (req, res) => {
         const {id, name, image} = product
         return {id, name, image}
     })
-    res.json(newProducts)
-})
-
-app.get('/api/products/:productID', (req, res) => {
-
-    const { productID } = req.params
-
-    singleProduct = products.find(
-        (product) => product.id === Number(productID)
-    )
-
-    if(!singleProduct) {
-        res.status(404).send('Product does not esists')
-    }
-
-    res.json(singleProduct)
+    res.send(newProducts)
 })
 
 app.listen(5000, () => {
